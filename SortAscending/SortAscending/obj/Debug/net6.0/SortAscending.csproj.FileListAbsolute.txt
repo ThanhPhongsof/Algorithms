@@ -1,0 +1,15 @@
+D:\Algorithms\SortAscending\SortAscending\bin\Debug\net6.0\SortAscending.exe
+D:\Algorithms\SortAscending\SortAscending\bin\Debug\net6.0\SortAscending.deps.json
+D:\Algorithms\SortAscending\SortAscending\bin\Debug\net6.0\SortAscending.runtimeconfig.json
+D:\Algorithms\SortAscending\SortAscending\bin\Debug\net6.0\SortAscending.dll
+D:\Algorithms\SortAscending\SortAscending\bin\Debug\net6.0\ref\SortAscending.dll
+D:\Algorithms\SortAscending\SortAscending\bin\Debug\net6.0\SortAscending.pdb
+D:\Algorithms\SortAscending\SortAscending\obj\Debug\net6.0\SortAscending.csproj.AssemblyReference.cache
+D:\Algorithms\SortAscending\SortAscending\obj\Debug\net6.0\SortAscending.GeneratedMSBuildEditorConfig.editorconfig
+D:\Algorithms\SortAscending\SortAscending\obj\Debug\net6.0\SortAscending.AssemblyInfoInputs.cache
+D:\Algorithms\SortAscending\SortAscending\obj\Debug\net6.0\SortAscending.AssemblyInfo.cs
+D:\Algorithms\SortAscending\SortAscending\obj\Debug\net6.0\SortAscending.csproj.CoreCompileInputs.cache
+D:\Algorithms\SortAscending\SortAscending\obj\Debug\net6.0\SortAscending.dll
+D:\Algorithms\SortAscending\SortAscending\obj\Debug\net6.0\ref\SortAscending.dll
+D:\Algorithms\SortAscending\SortAscending\obj\Debug\net6.0\SortAscending.pdb
+D:\Algorithms\SortAscending\SortAscending\obj\Debug\net6.0\SortAscending.genruntimeconfig.cache

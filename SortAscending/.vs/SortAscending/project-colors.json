@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "60df9c08-9619-47cb-b67a-ec19d7fc7b07": {
+      "ProjectGuid": "60df9c08-9619-47cb-b67a-ec19d7fc7b07",
+      "DisplayName": "SortAscending",
+      "ColorIndex": 0
+    },
+    "b2f6c967-7930-45c2-a811-555646fe9783": {
+      "ProjectGuid": "b2f6c967-7930-45c2-a811-555646fe9783",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
