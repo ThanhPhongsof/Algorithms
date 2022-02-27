@@ -19,7 +19,6 @@ namespace SortAscending
             return Convert.ToInt32(Console.ReadLine());
         }
 
-
         public static void SortAsc_Basic(int[] arr)
         {
             Console.WriteLine($"Sort Asc array: ");                            // Sort asc
@@ -36,78 +35,68 @@ namespace SortAscending
 
         public static void SortArrayAsc(int[] arr)
         {
-            QuickSort(arr, 0, arr.Length - 1);
+            QuickSortForAscending(arr, 0, arr.Length - 1);
         }
 
         public static void SortArrayDesc(int[] arr)
         {
-            QuickSortv2(arr, 0, arr.Length - 1);
+            QuickSortForDescending(arr, 0, arr.Length - 1);
         }
 
-        public static void QuickSort(int[] arr, int left, int right)
+        public static void QuickSortForAscending(int[] arr, int left, int right)
         {
-            int i = left;
-            int j = right;
+            int teamp;
 
-            var pivot = arr[(left + right) / 2];
-
-            while (i <= j)
+            if (left < right)
             {
-                while (arr[i] < pivot) 
-                    i++;
+                int middle = arr[(left + right) / 2];
+                int i = left - 1;
+                int j = right + 1;
 
-                while (arr[j] > pivot) 
-                    j--;
-
-                if (i <= j)
+                while (true)
                 {
-                    var temp = arr[i];
+                    while (arr[++i] < middle && i < right) ; // fine elements smaller than the middle value form the left
+                    while (arr[--j] > middle && j > 0) ;     // fine elements large than the middle value form the right
+
+                    if (i >= j)
+                        break;
+
+                    teamp = arr[i];
                     arr[i] = arr[j];
-                    arr[j] = temp;
-
-                    i++;
-                    j--;
+                    arr[j] = teamp;
                 }
+
+                QuickSortForAscending(arr, left, i - 1);
+                QuickSortForAscending(arr, j + 1, right);
             }
-
-            if (left < j) 
-                QuickSort(arr, left, j);
-
-            if (i < right) 
-                QuickSort(arr, i, right);
         }
 
-        public static void QuickSortv2(int[] arr, int left, int right)
+        public static void QuickSortForDescending(int[] arr, int left, int right)
         {
-            int i = left;
-            int j = right;
+            int teamp;
 
-            var pivot = arr[(left + right) / 2];
-
-            while (i <= j)
+            if (left < right)
             {
-                while (arr[i] < pivot)
-                    i++;
+                int middle = arr[(left + right) / 2];
+                int i = left - 1;
+                int j = right + 1;
 
-                while (arr[j] > pivot)
-                    j--;
-
-                if (i >= j)
+                while (true)
                 {
-                    var temp = arr[i];
+                    while (arr[++i] > middle && i < right) ; // fine elements smaller than the middle value form the left
+                    while (arr[--j] < middle && j > 0) ;     // fine elements large than the middle value form the right
+
+                    if (i >= j)
+                        break;
+
+                    teamp = arr[i];
                     arr[i] = arr[j];
-                    arr[j] = temp;
-
-                    i++;
-                    j--;
+                    arr[j] = teamp;
                 }
+
+                QuickSortForDescending(arr, left, i - 1);
+                QuickSortForDescending(arr, j + 1, right);
             }
-
-            if (left > j)
-                QuickSortv2(arr, left, j);
-
-            if (i < right)
-                QuickSortv2(arr, i, right);
         }
     }
 }
